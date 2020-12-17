@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>form update</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-list>
+      <ion-item>
+        <ion-label>Nama : {{loadedStudent.nim}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Telpon</ion-label>
+        <ion-input type="text" ngModel name="nama" placeholder="{{loadedStudent.nama}}"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="text" ngModel name="prodi" placeholder="{{loadedStudent.prodi}}"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" color="primary" expand="block">Update</ion-button>
+  </form>
+</ion-content>

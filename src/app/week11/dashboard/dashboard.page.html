@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Welcome to dashboard
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        Your registered EmailID : {{userEmail}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-footer (click)="logOut()">
+    <ion-toolbar color="secondary">
+      <ion-title>Log Out</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

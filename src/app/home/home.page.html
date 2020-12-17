@@ -1,0 +1,26 @@
+<ion-tabs color="tertiary">
+  <ion-tab-bar slot="bottom" color="tertiary">
+
+    <ion-tab-button tab="index" (click)="goTo('index')" >
+      <ion-label>
+        Contacts
+      </ion-label>
+      <ion-icon name="people-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="maps" (click)="goTo('maps')">
+      <ion-label>
+        Maps
+      </ion-label>
+      <ion-icon name="map-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" (click)="goTo('profile')">
+      <ion-label>
+        Profile
+      </ion-label>
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
